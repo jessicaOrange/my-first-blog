@@ -1,13 +1,35 @@
 .page-header {
-    background-color: #ff9400;
+    background-color: #f3f3f3;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    border: 1px solid #e7e7e7;
+    height: 50px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+.logo {
+    float: left;
+    vertical-align: bottom;
+}
+
+.title {
     text-decoration: none;
+    float: right;
+    display: block;
+}
+
+.title a {
+    color: #666;
+    text-align: left;
+    padding-right: 32px;
+    text-decoration: none;
+    font-size: 22pt;
+}
+
+.title a:visited {
+    color: #8c39c6;
+}
+
+.title a:hover {
+    background-color: #ddd;
 }
 
 .content {
@@ -15,7 +37,11 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'helvetica', cursive;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .date {
