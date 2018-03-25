@@ -9,12 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
 		    <link rel="stylesheet" href="{% static 'css/owl.theme.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-		    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
 		<!-- google font -->
         <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
@@ -47,7 +47,7 @@
                                     <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
                                     <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
                                     <li><a href="#services"><i class="fa fa-bullhorn"></i> Blog</a></li>
-                                    <li><a href="#testimonials"><i class="fa fa-thumbs-up"></i> About Me</a></li>
+                                    <li><a href="#services"><i class="fa fa-thumbs-up"></i> About Me</a></li>
                                     <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
                                 </ul>
                             </div>  <!-- /.navbar-collapse -->
@@ -57,12 +57,12 @@
 
                 <div class="middle text-center clearfix">
                     <div class="container">
-                        <h1 class="pro-name">Website of Jing Liu</h1>
-                        <p class="tagline">Website of Jing Liu</p>
+                        <h1 class="pro-name">Welcome to the Website of Jing</h1>
+                        <p class="tagline">Website of Jing</p>
                         <div class="skills">
 
                         </div>  <!-- skills -->
-                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">More Information</a>
+                        <a href="#portfolio" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">More Information</a>
                     </div>  <!-- container -->
                 </div>  <!-- middle -->
 
@@ -236,47 +236,6 @@
         </div>
 
 
-        <div class="content-block" id="testimonials">
-            <header class="block-heading cleafix text-center">
-                <h1>What Clients Say</h1>
-                <!-- <p>Lorem Ipsum Text</p> -->
-            </header>
-            <div class="block-content text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                        	<div class="owl-carousel">
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="{% static 'img/testimonial_31-190x190.jpg' %}">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Jhon Doe</strong><br>
-                                        <span>Head of Ideas, Technext</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="{% static 'img/testimonial_11-190x190.jpg' %}">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Jane Doe</strong><br>
-                                        <span>CEO, Apple Inc</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="{% static 'img/testimonial_22-190x190.jpg' %}">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Albert Doe</strong><br>
-                                        <span>Team Lead, Design Studio</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-							</div>	<!-- owl-carousel -->
-						</div>	<!-- col-md-12 -->
-                    </div>	<!-- row -->
-                </div>	<!-- container -->
-            </div>	<!-- block-content -->
-        </div>	<!-- content-block -->
-
         <div class="content-block" id="contact">
             <div class="overlay-3">
                 <header class="block-heading cleafix text-center">
@@ -295,7 +254,7 @@
                                 </form>
                             </div>
                             <div class="col-md-6 wow animated fadeInRight">
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-md-12">
                                         <div class="contact-info">
                                             <div class="clearfix">
@@ -324,7 +283,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row">
                                     <ul class="social-box">
                                         <li><a class="facebook-icon" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -359,14 +318,14 @@
             new WOW().init();
         </script>
 
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.actual.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.isonscreen.js"></script>
+        <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- <script src="{% static 'js/jquery.actual.min.js' %}"></script> -->
+        <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/jquery.isonscreen.js' %}"></script>
 
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
 
         <script>
         	$(document).ready(function(){
